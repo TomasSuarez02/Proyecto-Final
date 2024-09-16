@@ -1,0 +1,9 @@
+*{
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+.active {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+}

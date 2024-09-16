@@ -1,0 +1,25 @@
+.privatelayout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: burlywood;
+    color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.main {
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+.footer {
+    background-color: burlywood;
+    color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
