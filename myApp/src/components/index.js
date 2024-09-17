@@ -1,2 +1,4 @@
 export * from './LoginForm';
-export * from './shared/NavBar'
+export * from './UsersList';
+export * from './EmployeesList';
+export * from './shared/NavBar';
