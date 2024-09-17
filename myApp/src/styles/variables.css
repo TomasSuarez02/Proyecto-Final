@@ -3,3 +3,17 @@
     --secundary-color: #FFA04F;
     --error-color: #FF3348;
 }
+
+.dark {
+    --background-color: #572E1F;
+    --navbar-color: #82452F;
+    --font-color: #FFEFDE;
+    --button-color: black;
+}
+
+.light {
+    --background-color: #FFEFDE;
+    --navbar-color: #FFA04F;
+    --font-color: #572E1F;
+    --button-color: white;
+}

@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: var(--navbar-color);
+    color: var(--font-color);
+    justify-content: space-between;
+}
+
+.navbar nav {
+    background-color: var(--navbar-color);
+    color: var(--font-color);
+    display: flex;
+    padding-top: 5px;
+    gap: 20px;
+}
+
+.button {
+    background-color: var(--button-color);
+    color: var(--font-color);
+    border-radius: 15px;
+    height: 25px;
+    width: 55px;
+}
+
+.links {
+    background-color: var(--navbar-color);
+    color: var(--font-color);
+}
