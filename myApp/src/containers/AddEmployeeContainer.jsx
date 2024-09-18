@@ -19,7 +19,7 @@ const AddEmployeeContainer = () => {
 				setError('Error al cargar el empleado', response.statusText);
 				return;
 			}
-
+			
 		} catch (error) {
 			setError('Error al cargar el empleado');			
 		}
