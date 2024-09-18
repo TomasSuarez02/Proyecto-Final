@@ -6,7 +6,7 @@ const AddEmployeeForm = ({values, handleChange, handleSubmit, error}) => {
 	if (error) return error;
 
 	return (
-		<div className={styles.AddEmployeeForm}>
+		<div className={styles.addemployeeform}>
 			<h1>Add New Employee</h1>
  			<form onSubmit={handleSubmit} className={styles.form}> 
 				<div className={styles.formgroup}>

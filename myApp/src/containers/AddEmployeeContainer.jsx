@@ -8,9 +8,12 @@ const AddEmployeeContainer = () => {
 
 	const submitForm = async () => {
         try {
-			const response = await fetch(`http://localhost:3000/employees`, {method: 'POST'}, 
-                {headers: {'Content-Type': 'application/json'}, 
-                body: JSON.stringify({id: values.id, name: values.name, surname: values.surname, cargo: values.cargo, telefono: values.telefono, email: values.email})})
+			const requestOptions = {
+				method: 'POST',
+				headers: {'Content-Type': 'application/json'},
+				body: JSON.stringify({id: values.id, name: values.name, surname: values.surname, cargo: values.cargo, telefono: values.telefono, email: values.email})
+			}
+			const response = await fetch(`http://localhost:3000/employees`, requestOptions);
 
 			if (!response.ok) {
 				setError('Error al cargar el empleado', response.statusText);

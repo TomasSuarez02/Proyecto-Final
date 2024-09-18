@@ -3,14 +3,17 @@ import { useForm } from '../hooks'
 import { AddUserForm } from '../components';
 
 const AddUserContainer = () => {
-	const {values, handleChange, handleSubmit} = useForm({id: '', name: '', surname: '', cargo: '', telefono: '', email: ''});
+	const {values, handleChange, handleSubmit} = useForm({id: '', username: '', email: '', password: ''});
     const [error, setError] = useState(null);
 
 	const submitForm = async () => {
         try {
-			const response = await fetch(`http://localhost:3000/users`, {method: 'POST'}, 
-                {headers: {'Content-Type': 'application/json'}, 
-                body: JSON.stringify({id: values.id, name: values.name, surname: values.surname, cargo: values.cargo, telefono: values.telefono, email: values.email})})
+			const requestOptions = {
+				method: 'POST',
+				headers: {'Content-Type': 'application/json'},
+				body: JSON.stringify({id: values.id, username: values.username, email: values.email, password: values.password})
+			}
+			const response = await fetch(`http://localhost:3000/users`, requestOptions);
 
 			if (!response.ok) {
 				setError('Error al cargar el usuario', response.statusText);

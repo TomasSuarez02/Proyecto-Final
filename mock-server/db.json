@@ -23,6 +23,14 @@
       "cargo": "Limpieza",
       "telefono": "341-2-895149",
       "email": "hernansavio@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Luciano",
+      "surname": "Hove",
+      "cargo": "Secretario",
+      "telefono": "341-5-895623",
+      "email": "lucianohove@gmail.com"
     }
   ],
   "users": [
@@ -37,6 +45,12 @@
       "username": "miriamayala",
       "email": "miriamayala@gmail.com",
       "password": "m456"
+    },
+    {
+      "id": "3",
+      "username": "micaelanoya",
+      "email": "micaelanoya@gmail.com",
+      "password": "mn789"
     }
   ]
 }
