@@ -5,7 +5,7 @@ import styles from './HomePage.module.css';
 const HomePage = ({}) => {
 	return (
 		<div className={styles.homepage}>
- 			HomePage works!
+ 			¡Bienvenido a Mi Proyecto!
  		</div>
 	);
 };

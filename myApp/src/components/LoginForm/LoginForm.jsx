@@ -17,7 +17,7 @@ const LoginForm = ({values, handleChange, handleSubmit, isLoading}) => {
 					<label htmlFor='password'>Password</label>
 					<input type='password' id='password' name='password' required value={values.password} onChange={handleChange}/>
 				</div>
-				<button type='submit'>Login</button>
+				<button className={styles.submitButton} type='submit'>Login</button>
 			</form>
  		</div>
 	);

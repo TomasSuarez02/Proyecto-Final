@@ -1,5 +1,5 @@
 "use client";
-import React, { Children } from 'react';
+import React from 'react';
 import styles from './PrivateLayout.module.css';
 import { Outlet } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
@@ -15,7 +15,11 @@ const PrivateLayout = () => {
 			</header>
 			<main className={styles.main}><Outlet/></main>
 			<footer className={styles.footer}>
-				<h1 className={styles.footer}>Esto es un footer</h1>
+				<div className={styles.footerInfo}>
+					<h1 className={styles.footerInfo}>Contacta con nosotros</h1>
+					<p className={styles.footerInfo}>Email: myApp@gmail.com</p>
+					<p className={styles.footerInfo}>Telefono: 341-3-568792</p>
+				</div>
 			</footer>
  		</div>
 	);

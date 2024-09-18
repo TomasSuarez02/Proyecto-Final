@@ -1,41 +1,42 @@
-{"employees": [
-        {
-            "id": "1",
-            "name": "Gustavo",
-            "surname": "Rodriguez",
-            "cargo": "Analista de datos",
-            "telefono": "341-5-689523",
-            "email": "gustavorodriguez@gmail.com"
-        }, 
-        {
-            "id": "2",
-            "name": "Miriam",
-            "surname": "Ayala",
-            "cargo": "Ingeniera Logistica",
-            "telefono": "341-3-596214",
-            "email": "miriamayala@gmail.com"
-        },
-        {
-            "id": "3",
-            "name": "Hernan",
-            "surname": "Savio",
-            "cargo": "Limpieza",
-            "telefono": "341-2-895149",
-            "email": "hernansavio@gmail.com"
-        }
-    ], 
-"users": [
-        {
-            "id": "1",
-            "username": "gustavorodriguez",
-            "email": "gustavorodriguez@gmail.com",
-            "password": "g123"
-        },
-        {
-            "id": "2",
-            "username": "miriamayala",
-            "email": "miriamayala@gmail.com",
-            "password": "m456"
-        }
-    ]
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Gustavo",
+      "surname": "Rodriguez",
+      "cargo": "Analista de datos",
+      "telefono": "341-5-689523",
+      "email": "gustavorodriguez@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Miriam",
+      "surname": "Ayala",
+      "cargo": "Ingeniera Logistica",
+      "telefono": "341-3-596214",
+      "email": "miriamayala@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Hernan",
+      "surname": "Savio",
+      "cargo": "Limpieza",
+      "telefono": "341-2-895149",
+      "email": "hernansavio@gmail.com"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "gustavorodriguez",
+      "email": "gustavorodriguez@gmail.com",
+      "password": "g123"
+    },
+    {
+      "id": "2",
+      "username": "miriamayala",
+      "email": "miriamayala@gmail.com",
+      "password": "m456"
+    }
+  ]
 }

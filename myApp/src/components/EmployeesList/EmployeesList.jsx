@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import styles from './EmployeesList.module.css';
+import { AddEmployeeContainer } from '../../containers';
 
 const EmployeesList = ({}) => {
 	const [employees, setEmployees] = useState([]);
@@ -37,12 +38,15 @@ const EmployeesList = ({}) => {
 			const response = await fetch(`http://localhost:3000/employees/${id}`, {method: 'DELETE'})
 
 			if (!response.ok) {
-				setError('Error al eliminar el usuario', response.statusText);
+				setError('Error al eliminar el empleado', response.statusText);
 				return;
 			}
 
+			const newEmployees = employees.filter((employee) => employee.id != id);
+			setEmployees(newEmployees);
+
 		} catch (error) {
-			setError('Error al eliminar el usuario');
+			setError('Error al eliminar el empleado');
 			setLoading(false);				
 		}
 	}
@@ -53,13 +57,14 @@ const EmployeesList = ({}) => {
 			<ul>
 				{employees.map((employee) => (
 					<p>
-						<li key={employee.id}>
+						<li key={employee.id}  className={styles.lista}>
 							{employee.name} - {employee.surname} - {employee.cargo} - {employee.telefono}
 						<button className={styles.button} type='button' onClick={() => deleteEmployee(employee.id)}>Eliminar</button>
 						</li>
 					</p>
 				))}
 			</ul>
+			<AddEmployeeContainer/>
 		</div>
 	)
 };

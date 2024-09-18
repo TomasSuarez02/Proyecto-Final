@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import styles from './UsersList.module.css';
+import { AddUserContainer } from '../../containers';
 
 const UsersList = ({}) => {
 	const [users, setUsers] = useState([]);
@@ -41,6 +42,9 @@ const UsersList = ({}) => {
 				return;
 			}
 
+			const newUsers = users.filter((user) => user.id != id);
+			setUsers(newUsers);
+
 		} catch (error) {
 			setError('Error al eliminar el usuario');
 			setLoading(false);				
@@ -48,18 +52,19 @@ const UsersList = ({}) => {
 	}
 
 	return (
-		<div className={styles.employeeslist}>
+		<div className={styles.userslist}>
 			<h1>Lista de Usuarios</h1>
 			<ul>
 				{users.map((user) => (
 					<p>
-						<li key={user.id}>
+						<li key={user.id} className={styles.lista}>
 							{user.username} - {user.email}
 						<button className={styles.button} type='button' onClick={() => deleteUser(user.id)}>Eliminar</button>
 						</li>
 					</p>
 				))}
 			</ul>
+			<AddUserContainer/>
 		</div>
 	)
 };

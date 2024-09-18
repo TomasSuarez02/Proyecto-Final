@@ -1,9 +1,11 @@
 *{
-    background-color: var(--primary-color);
-    color: var(--secundary-color);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .active {
-    background-color: var(--secundary-color);
-    color: var(--primary-color);
+    background-color: var(--font-color);
+    color: var(--navbar-color);
+    padding: 3px;
 }

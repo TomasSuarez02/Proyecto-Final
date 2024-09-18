@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     gap: 10px;
     background-color: var(--background-color);
     color: var(--font-color);

@@ -23,3 +23,12 @@
     padding: 10px;
     text-align: center;
 }
+
+.footerInfo {
+    display: flex;
+    height: 100px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--navbar-color);
+}

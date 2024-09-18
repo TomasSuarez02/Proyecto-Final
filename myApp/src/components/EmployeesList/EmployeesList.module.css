@@ -1,3 +1,28 @@
 .employeeslist {
-    
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+}
+
+.button {
+    background-color: var(--font-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    height: 25px;
+    width: 70px;
+}
+
+.buttonAdd {
+    background-color: var(--font-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    height: 25px;
+    width: 150px;
+}
+
+.lista {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
 }
